@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quote-Generator</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <nav>
+        <h2>Quote Generator</h2>
+      </nav>
+
+      <div class="pop-up">Copied to Clipboard</div>
+
+      <div class="container">
+        <div class="card">
+          <!-- generate quote randomly through script  -->
+          <div class="quote"></div>
+
+          <!-- controls like share btn , new-quote btn -->
+          <div class="controls">
+            <button id="quoteBtn">New Quote</button>
+            <div class="icon">
+              <i id="clipboard-icon" class="ri-clipboard-line"></i>
+
+              <a id="twitter-icon" target="_blank">
+                <i class="ri-twitter-x-line"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

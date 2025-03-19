@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+:root {
+  --black: #000;
+  --white: #fff;
+  --orange: #ffa500;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.main nav {
+  height: 80px;
+  width: 100%;
+  border-bottom: 1px solid #dadada50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main nav h2 {
+  font-weight: 500;
+  color: var(--orange);
+}
+
+.container {
+  width: 100%;
+  height: calc(100% - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  height: 400px;
+  width: 550px;
+  overflow: hidden;
+  background-color: #80808027;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.controls i {
+  margin-right: 15px;
+  font-size: 25px;
+  color: var(--orange);
+  padding: 4px;
+  border-radius: 10px;
+  background-color: var(--black);
+  cursor: pointer;
+}
+
+.icon a{
+  text-decoration: none;
+}
+
+#quoteBtn {
+  padding: 8px 15px;
+  border-radius: 10px;
+  background-color: var(--black);
+  color: var(--orange);
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.quote {
+  width: 100%;
+  height: 330px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.quote-info p {
+  text-align: end;
+  margin-top: 15px;
+}
+
+.quote-info span:nth-child(2) {
+  font-weight: 400;
+}
+.quote-info span:nth-child(3),
+span:nth-child(4) {
+  background-color: var(--black);
+  padding: 4px 10px;
+  border-radius: 10px;
+  color: var(--orange);
+}
+
+.pop-up {
+  position: absolute;
+  background-color: rgba(92, 255, 47, 0.601);
+  color: #000;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 2px;
+  top: 15%;
+  transform: translate(-100%);
+  transition: all .45s ease-in-out;
+
+}
